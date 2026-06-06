@@ -34,12 +34,12 @@
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://smartstemtutor.com/#aldo",
+        "@id": "https://smartstemtutor.site/#aldo",
         "name": "Aldo Mayme",
         "jobTitle": "STEM Tutor",
         "description": "Expert online tutor specialising in Physics and Mathematics for high school and college students across North America.",
-        "url": "https://smartstemtutor.com/",
-        "image": "https://smartstemtutor.com/IMG_20231222_141252.jpg",
+        "url": "https://smartstemtutor.site/",
+        "image": "https://smartstemtutor.site/IMG_20231222_141252.jpg",
         "sameAs": [
           "https://www.linkedin.com/in/aldo-mayme-martinez",
           "https://www.reddit.com/user/Glittering_Report_82/"
@@ -55,12 +55,12 @@
       },
       {
         "@type": "Service",
-        "@id": "https://smartstemtutor.com/#service",
+        "@id": "https://smartstemtutor.site/#service",
         "name": "Online Physics and Math Tutoring",
-        "provider": { "@id": "https://smartstemtutor.com/#aldo" },
+        "provider": { "@id": "https://smartstemtutor.site/#aldo" },
         "description": "One-on-one online tutoring in Physics (AP, Classical, Quantum) and Mathematics (Algebra through Differential Equations) for students across North America.",
         "areaServed": { "@type": "Place", "name": "North America" },
-        "url": "https://smartstemtutor.com/",
+        "url": "https://smartstemtutor.site/",
         "offers": {
           "@type": "Offer",
           "name": "Free 15-minute consultation",
@@ -190,7 +190,6 @@
       text-decoration: none;
     }
 
-    /* Logo mark — small cyan circle accent */
     .logo-mark {
       width: 34px;
       height: 34px;
@@ -212,7 +211,6 @@
       letter-spacing: -0.01em;
     }
 
-    /* Language dropdown */
     .dropdown {
       margin-left: 12px;
     }
@@ -236,7 +234,6 @@
       box-shadow: none;
     }
 
-    /* Nav */
     #navbar {
       margin-left: auto;
       display: flex;
@@ -267,7 +264,6 @@
       color: var(--accent);
     }
 
-    /* Hamburger */
     .hamburger {
       display: none;
       margin-left: auto;
@@ -285,7 +281,6 @@
 
     .hamburger:hover { background: var(--surface-hover); }
 
-    /* Mobile menu */
     .mobile-menu {
       display: none;
       flex-direction: column;
@@ -456,7 +451,6 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.5);
     }
 
-    /* ─── Desktop CTA button ─────────────────────────────────── */
     a.button {
       display: inline-flex;
       align-items: center;
@@ -550,7 +544,6 @@
       font-weight: 500;
     }
 
-    /* ─── Divider ────────────────────────────────────────────── */
     hr.glow-hr {
       border: none;
       height: 1px;
@@ -770,7 +763,6 @@
       text-transform: uppercase;
     }
 
-    /* Scroll nav */
     .scroll-nav {
       display: flex;
       justify-content: center;
@@ -1181,7 +1173,13 @@
     <div class="testimonials-wrapper reveal">
       <div class="testimonials-track" id="testimonialsTrack" role="list" aria-label="Student testimonials">
 
-        <article class="box" role="listitem" itemscope itemtype="https://schema.org/Review">
+        <!-- Review 1 -->
+        <article class="box" role="listitem"
+          itemscope itemtype="https://schema.org/Review">
+          <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Service">
+            <meta itemprop="name" content="Online Physics and Math Tutoring by Aldo Mayme">
+            <meta itemprop="url" content="https://smartstemtutor.site/">
+          </div>
           <div class="star-rating" aria-label="5 out of 5 stars">★★★★★</div>
           <cite itemprop="author" itemscope itemtype="https://schema.org/Person">
             <span itemprop="name" class="reviewer-name">Luis Contreras</span>
@@ -1191,11 +1189,19 @@
             Aldo tutored my highschool daughter in physics. He is very patient and knowledgeable. Very accommodating and is able to communicate and explain difficult concepts. I was extremely happy with the results and would highly recommend.
           </blockquote>
           <div class="testimonial-meta">Physics · AP Level</div>
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">
+          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+          </div>
         </article>
 
-        <article class="box" role="listitem" itemscope itemtype="https://schema.org/Review">
+        <!-- Review 2 -->
+        <article class="box" role="listitem"
+          itemscope itemtype="https://schema.org/Review">
+          <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Service">
+            <meta itemprop="name" content="Online Physics and Math Tutoring by Aldo Mayme">
+            <meta itemprop="url" content="https://smartstemtutor.site/">
+          </div>
           <div class="star-rating" aria-label="5 out of 5 stars">★★★★★</div>
           <cite itemprop="author" itemscope itemtype="https://schema.org/Person">
             <span itemprop="name" class="reviewer-name">Rob Parker</span>
@@ -1205,11 +1211,19 @@
             Aldo is a great physics tutor! He is clear and his mastery of all concepts related to physics makes learning physics really easy and simple for me!
           </blockquote>
           <div class="testimonial-meta">Physics · College Level</div>
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">
+          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+          </div>
         </article>
 
-        <article class="box" role="listitem" itemscope itemtype="https://schema.org/Review">
+        <!-- Review 3 -->
+        <article class="box" role="listitem"
+          itemscope itemtype="https://schema.org/Review">
+          <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Service">
+            <meta itemprop="name" content="Online Physics and Math Tutoring by Aldo Mayme">
+            <meta itemprop="url" content="https://smartstemtutor.site/">
+          </div>
           <div class="star-rating" aria-label="5 out of 5 stars">★★★★★</div>
           <cite itemprop="author" itemscope itemtype="https://schema.org/Person">
             <span itemprop="name" class="reviewer-name">Joshua Cline</span>
@@ -1219,11 +1233,19 @@
             Knows his stuff in quantum.
           </blockquote>
           <div class="testimonial-meta">Physics · Undergraduate Level</div>
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">
+          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+          </div>
         </article>
 
-        <article class="box" role="listitem" itemscope itemtype="https://schema.org/Review">
+        <!-- Review 4 -->
+        <article class="box" role="listitem"
+          itemscope itemtype="https://schema.org/Review">
+          <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Service">
+            <meta itemprop="name" content="Online Physics and Math Tutoring by Aldo Mayme">
+            <meta itemprop="url" content="https://smartstemtutor.site/">
+          </div>
           <div class="star-rating" aria-label="5 out of 5 stars">★★★★★</div>
           <cite itemprop="author" itemscope itemtype="https://schema.org/Person">
             <span itemprop="name" class="reviewer-name">Garrett Dino</span>
@@ -1233,8 +1255,10 @@
             Very helpful in explaining any questions i had on log functions and graphing exponentials
           </blockquote>
           <div class="testimonial-meta">Mathematics</div>
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">
+          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+          </div>
         </article>
 
       </div>
