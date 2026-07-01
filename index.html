@@ -56,61 +56,60 @@
   </script>
 
   <!-- Schema: Service + Reviews -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://smartstemtutor.site/#service",
-    "name": "Online Physics and Math Tutoring",
-    "provider": {
-      "@type": "Person",
-      "name": "Aldo Mayme",
-      "url": "https://smartstemtutor.site/"
+  <!-- Schema: LocalBusiness + Reviews -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://smartstemtutor.site/#service",
+  "name": "Smart STEM Tutor — Aldo Mayme",
+  "image": "https://smartstemtutor.site/IMG_20231222_141252.jpg",
+  "priceRange": "$$",
+  "description": "One-on-one online tutoring in Physics (AP, Classical, Quantum) and Mathematics (Algebra through Differential Equations) for students across North America.",
+  "areaServed": { "@type": "Place", "name": "North America" },
+  "url": "https://smartstemtutor.site/",
+  "email": "mailto:aldon2004@hotmail.com",
+  "makesOffer": {
+    "@type": "Offer",
+    "name": "Free 15-minute consultation",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "4",
+    "bestRating": "5"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Luis Contreras" },
+      "reviewBody": "Aldo tutored my highschool daughter in physics. He is very patient and knowledgeable. Very accommodating and is able to communicate and explain difficult concepts. I was extremely happy with the results and would highly recommend.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
     },
-    "description": "One-on-one online tutoring in Physics (AP, Classical, Quantum) and Mathematics (Algebra through Differential Equations) for students across North America.",
-    "areaServed": { "@type": "Place", "name": "North America" },
-    "url": "https://smartstemtutor.site/",
-    "offers": {
-      "@type": "Offer",
-      "name": "Free 15-minute consultation",
-      "price": "0",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Rob Parker" },
+      "reviewBody": "Aldo is a great physics tutor! He is clear and his mastery of all concepts related to physics makes learning physics really easy and simple for me!",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "4",
-      "bestRating": "5"
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Joshua Cline" },
+      "reviewBody": "Knows his stuff in quantum.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
     },
-    "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Luis Contreras" },
-        "reviewBody": "Aldo tutored my highschool daughter in physics. He is very patient and knowledgeable. Very accommodating and is able to communicate and explain difficult concepts. I was extremely happy with the results and would highly recommend.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Rob Parker" },
-        "reviewBody": "Aldo is a great physics tutor! He is clear and his mastery of all concepts related to physics makes learning physics really easy and simple for me!",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Joshua Cline" },
-        "reviewBody": "Knows his stuff in quantum.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Garrett Dino" },
-        "reviewBody": "Very helpful in explaining any questions i had on log functions and graphing exponentials",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-      }
-    ]
-  }
-  </script>
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Garrett Dino" },
+      "reviewBody": "Very helpful in explaining any questions i had on log functions and graphing exponentials",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    }
+  ]
+}
+</script>
 
   <!-- Schema: FAQ -->
   <script type="application/ld+json">
