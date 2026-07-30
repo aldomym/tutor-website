@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Book a STEM tutoring lesson with Aldo – Physics and Mathematics for high school and undergraduate students.">
+  <meta name="description" content="View pricing for paid one-on-one Physics and Mathematics tutoring with Aldo. A complimentary 15-minute consultation is available for planning only and does not include tutoring or instruction.">
   <title>Pricing | Smart STEM Tutor</title>
   <link rel="icon" type="image/x-icon" href="dynamic-atom-molecule-science-symbol-vector-icon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -248,6 +248,137 @@
       max-width: 500px;
       margin: 0 auto;
       line-height: 1.65;
+    }
+
+    /* ─── Consultation policy ────────────────────────────────── */
+    .policy-section {
+      max-width: 900px;
+      margin: 8px auto 34px;
+      padding: 0 32px;
+    }
+
+    .policy-card {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 20px;
+      align-items: start;
+      padding: 28px 30px;
+      border-radius: 20px;
+      background:
+        linear-gradient(135deg, rgba(255,107,107,0.10), rgba(0,200,255,0.07));
+      border: 1px solid rgba(255,107,107,0.38);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+
+    .policy-card::before {
+      content: '';
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--accent2), var(--accent));
+    }
+
+    .policy-icon {
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: rgba(255,107,107,0.12);
+      border: 1px solid rgba(255,107,107,0.28);
+      font-size: 23px;
+      flex-shrink: 0;
+    }
+
+    .policy-content .section-eyebrow {
+      text-align: left;
+      color: var(--accent2);
+      margin-bottom: 4px;
+    }
+
+    .policy-content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(25px, 3.5vw, 36px);
+      color: white;
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .policy-content p {
+      margin: 0 0 12px;
+      color: #d8dbea;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .policy-content p:last-of-type { margin-bottom: 18px; }
+
+    .policy-content strong { color: white; }
+
+    .policy-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .policy-list li {
+      position: relative;
+      padding-left: 25px;
+      color: #c8cce0;
+      font-size: 14px;
+    }
+
+    .policy-list li::before {
+      content: '✕';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent2);
+      font-weight: 700;
+    }
+
+    .consult-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      background: rgba(0,200,255,0.12);
+      border: 1px solid var(--border-accent);
+      transition: transform var(--transition), background var(--transition), border-color var(--transition);
+    }
+
+    .consult-btn::after { content: '→'; }
+
+    .consult-btn:hover {
+      color: white;
+      text-decoration: none;
+      transform: translateY(-2px);
+      background: rgba(0,200,255,0.2);
+      border-color: rgba(0,200,255,0.55);
+    }
+
+    .lesson-policy-note {
+      margin: -14px 0 22px;
+      padding: 8px 12px;
+      width: 100%;
+      border-radius: 9px;
+      background: rgba(255,107,107,0.08);
+      border: 1px solid rgba(255,107,107,0.2);
+      color: #f0c6c6;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 600;
     }
 
     /* ─── Pricing grid ───────────────────────────────────────── */
@@ -621,6 +752,16 @@
 
       .page-hero { padding: 36px 20px 16px; }
 
+      .policy-section { padding: 0 20px; margin-bottom: 26px; }
+
+      .policy-card {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 24px 22px;
+      }
+
+      .policy-icon { width: 42px; height: 42px; }
+
       .pricing-grid { padding: 8px 20px 0; gap: 16px; }
 
       .pricing-card { min-width: unset; width: 100%; max-width: 100%; }
@@ -681,7 +822,35 @@
     <section class="page-hero" aria-label="Pricing introduction">
       <span class="section-eyebrow">Pricing</span>
       <h1>Book a <span>Lesson</span></h1>
-      <p>Choose the session that fits your level. All lessons are live, one-on-one, and tailored to your needs.</p>
+      <p>Choose the paid tutoring lesson that fits your level. All instructional sessions are live, one-on-one, and tailored to your needs.</p>
+    </section>
+
+    <!-- CONSULTATION POLICY -->
+    <section class="policy-section reveal" aria-labelledby="consultation-policy-heading">
+      <div class="policy-card">
+        <div class="policy-icon" aria-hidden="true">ℹ️</div>
+        <div class="policy-content">
+          <span class="section-eyebrow">Please read before booking</span>
+          <h2 id="consultation-policy-heading">Complimentary consultation — no free tutoring</h2>
+          <p>
+            I offer a complimentary 15-minute consultation to discuss your goals, learning needs,
+            scheduling, and what our tutoring arrangement would look like.
+          </p>
+          <p>
+            <strong>The consultation does not include tutoring or academic instruction.</strong>
+            Once I provide instruction, the session is your <strong>first paid tutoring lesson</strong>—not a demo, trial, or sample lesson.
+          </p>
+          <ul class="policy-list" aria-label="Services not included in the complimentary consultation">
+            <li>No homework help or problem solving</li>
+            <li>No test preparation or concept teaching</li>
+            <li>No free trial, demo, or sample tutoring</li>
+          </ul>
+          <a href="https://calendly.com/aldon2004/new-meeting" class="consult-btn" rel="noopener noreferrer"
+             aria-label="Book a complimentary 15-minute consultation with no tutoring included">
+            Book the complimentary consultation
+          </a>
+        </div>
+      </div>
     </section>
 
     <hr class="glow-hr">
@@ -699,6 +868,7 @@
             <sup>$</sup>39<span class="cents">.99</span>
           </div>
           <div class="price-note">per session · USD</div>
+          <div class="lesson-policy-note">This is a paid tutoring lesson—not a free trial or demo.</div>
           <ul class="feature-list">
             <li>Algebra, Pre-calculus, Calculus</li>
             <li>AP &amp; IB curriculum support</li>
@@ -717,6 +887,7 @@
             <sup>$</sup>49<span class="cents">.99</span>
           </div>
           <div class="price-note">per session · USD</div>
+          <div class="lesson-policy-note">This is a paid tutoring lesson—not a free trial or demo.</div>
           <ul class="feature-list">
             <li>Linear Algebra, Calculus 3, ODEs</li>
             <li>Classical &amp; Quantum Mechanics</li>
@@ -727,7 +898,7 @@
 
       </div>
 
-      <p class="disclaimer">Prices are in US dollars · Exchange rate fees may apply</p>
+      <p class="disclaimer"><strong>All instruction is paid from the first lesson.</strong> Prices are in US dollars · Exchange rate fees may apply</p>
 
       <!-- Payment methods -->
       <div class="payment-wrap reveal">
