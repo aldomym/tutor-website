@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light dark">
 
   <title>Smart STEM Tutor | Expert Online Physics &amp; Math Tutoring | Aldo Mayme</title>
-  <meta name="description" content="Get expert online tutoring in Physics and Mathematics with Aldo Mayme — a patient STEM educator with 2+ years of experience helping 50+ students across North America. Book a free 15-minute consultation today.">
+  <meta name="description" content="Get expert online tutoring in Physics and Mathematics with Aldo Mayme. Book a complimentary 15-minute consultation to discuss goals and scheduling; tutoring begins with a paid first lesson.">
   <meta name="keywords" content="online physics tutor, online math tutor, math tutor, mathematics, maths, physics, physics tutor, AP Physics tutor, calculus tutor, STEM tutoring, online tutoring USA, AP Physics 1 2 C, linear algebra tutor, quantum mechanics tutor, Aldo Mayme tutor">
   <meta name="author" content="Aldo Mayme">
   <meta name="robots" content="index, follow">
@@ -20,7 +20,7 @@
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://smartstemtutor.site/">
   <meta property="og:title"       content="Smart STEM Tutor | Expert Online Physics &amp; Math Tutoring">
-  <meta property="og:description" content="Boost your physics and math grades with Aldo Mayme — an expert STEM tutor serving students across North America. First consultation is free!">
+  <meta property="og:description" content="Expert online Physics and Math tutoring with Aldo Mayme. Book a complimentary consultation to discuss goals and scheduling; instruction begins with a paid first lesson.">
   <meta property="og:image"       content="https://smartstemtutor.site/IMG_20231222_141252.jpg">
   <meta property="og:image:alt"   content="Aldo Mayme, Smart STEM Tutor">
   <meta property="og:locale"      content="en_US">
@@ -28,7 +28,7 @@
 
   <meta name="twitter:card"        content="summary_large_image">
   <meta name="twitter:title"       content="Smart STEM Tutor | Expert Online Physics &amp; Math Tutoring">
-  <meta name="twitter:description" content="Expert online tutoring in Physics &amp; Math for students across North America. Book a free consultation with Aldo today.">
+  <meta name="twitter:description" content="Expert online Physics &amp; Math tutoring across North America. Complimentary consultations are for planning only; instruction begins with a paid first lesson.">
   <meta name="twitter:image"       content="https://smartstemtutor.site/IMG_20231222_141252.jpg">
   <meta name="twitter:image:alt"   content="Aldo Mayme, Smart STEM Tutor">
 
@@ -74,7 +74,8 @@
   "email": "mailto:aldon2004@hotmail.com",
   "makesOffer": {
     "@type": "Offer",
-    "name": "Free 15-minute consultation",
+    "name": "Complimentary 15-minute consultation",
+    "description": "A planning conversation about goals, learning needs, scheduling, and tutoring arrangements. It does not include tutoring or academic instruction.",
     "price": "0",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock"
@@ -127,8 +128,8 @@
       },
       {
         "@type": "Question",
-        "name": "Is the first session free?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! You can book a free 15-minute consultation to discuss your goals and learning needs at no cost via Calendly." }
+        "name": "Is the first tutoring lesson free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Aldo offers a complimentary 15-minute consultation to discuss goals, learning needs, scheduling, and tutoring arrangements. The consultation does not include tutoring or academic instruction. Any session that includes instruction is a paid first tutoring lesson." }
       },
       {
         "@type": "Question",
@@ -447,6 +448,31 @@
 
     a.button:hover::after { transform: translateX(3px); }
 
+    .intro-consult {
+      max-width: 1100px;
+      margin: 8px auto 28px;
+      padding: 0 32px;
+      text-align: right;
+    }
+
+    .intro-consult a.button {
+      float: none;
+      margin: 0;
+    }
+
+    .consultation-note {
+      max-width: 540px;
+      margin: 12px 0 0 auto;
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .consultation-note strong {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
     .stats-bar {
       display: flex; gap: 0;
       max-width: 1100px; margin: 20px auto 0; padding: 0 32px;
@@ -739,6 +765,22 @@
       .glasscontainer { padding: 24px 20px; }
       .glasscontainer p { font-size: 16px; }
       a.button { display: none; }
+      .intro-consult {
+        padding: 0 20px;
+        margin: 8px auto 24px;
+        text-align: center;
+      }
+      .intro-consult a.button {
+        display: inline-flex;
+        width: 100%;
+        max-width: 360px;
+        padding: 14px 20px;
+      }
+      .consultation-note {
+        margin: 10px auto 0;
+        max-width: 360px;
+        text-align: center;
+      }
       .stats-bar { padding: 0 20px; }
       .stats-inner { flex-wrap: wrap; }
       .stat-item { flex: 1 1 45%; padding: 18px 12px; }
@@ -826,8 +868,13 @@
       </div>
     </section>
 
-    <a href="https://calendly.com/aldon2004/new-meeting" class="button" rel="noopener"
-       aria-label="Book a free 15-minute tutoring consultation with Aldo">Book free consult</a>
+    <div class="intro-consult reveal" aria-label="Consultation policy">
+      <a href="https://calendly.com/aldon2004/new-meeting" class="button" rel="noopener noreferrer"
+         aria-label="Book a complimentary 15-minute consultation with Aldo; no tutoring is included">Book complimentary consultation</a>
+      <p class="consultation-note">
+        <strong>Consultation only:</strong> Any instruction is provided during a paid first tutoring lesson.
+      </p>
+    </div>
 
     <section class="stats-bar reveal" aria-label="Tutoring statistics">
       <div class="stats-inner">
@@ -942,11 +989,15 @@
     <hr class="glow-hr" style="max-width:1100px;">
 
     <section class="cta-section buttonconsult" aria-labelledby="cta-heading">
-      <span class="section-eyebrow">First session is on me</span>
-      <h2 id="cta-heading">Get started now!</h2>
-      <h3>Book a free 15-minute consultation to discuss your physics or math goals — at no charge.</h3>
+      <span class="section-eyebrow">Complimentary consultation — no free tutoring</span>
+      <h2 id="cta-heading">Start with a planning conversation</h2>
+      <h3>
+        Book a complimentary 15-minute consultation to discuss your goals, learning needs, scheduling, and tutoring arrangements.
+        The consultation does not include instruction, homework help, test preparation, or a sample lesson.
+        Any session that includes instruction is your paid first tutoring lesson.
+      </h3>
       <a href="https://calendly.com/aldon2004/new-meeting" class="button" rel="noopener noreferrer"
-         aria-label="Book a free 15-minute online tutoring consultation with Aldo">Book a free consultation</a>
+         aria-label="Book a complimentary 15-minute planning consultation with Aldo; no tutoring is included">Book complimentary consultation</a>
     </section>
 
   </main>
