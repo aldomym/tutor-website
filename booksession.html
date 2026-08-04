@@ -5,9 +5,80 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="View pricing for paid one-on-one Physics and Mathematics tutoring with Aldo. A complimentary 15-minute consultation is available for planning only and does not include tutoring or instruction.">
-  <title>Pricing | Smart STEM Tutor</title>
+
+  <title>Online Math &amp; Physics Tutoring Prices | Smart STEM Tutor</title>
+  <meta name="description" content="View transparent prices for live, one-on-one online math and physics tutoring with Aldo Mayme. High school, AP, IB and undergraduate lessons are available across North America.">
+  <meta name="author" content="Aldo Mayme">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://smartstemtutor.site/booksession.html">
   <link rel="icon" type="image/x-icon" href="dynamic-atom-molecule-science-symbol-vector-icon.jpg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smartstemtutor.site/booksession.html">
+  <meta property="og:title" content="Online Math &amp; Physics Tutoring Prices | Smart STEM Tutor">
+  <meta property="og:description" content="Transparent prices for live, one-on-one online math and physics tutoring at high-school, AP, IB and undergraduate levels.">
+  <meta property="og:image" content="https://smartstemtutor.site/IMG_20231222_141252.jpg">
+  <meta property="og:image:alt" content="Aldo Mayme, online mathematics and physics tutor">
+  <meta property="og:site_name" content="Smart STEM Tutor">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Online Math &amp; Physics Tutoring Prices | Smart STEM Tutor">
+  <meta name="twitter:description" content="Transparent prices for live, one-on-one online math and physics tutoring.">
+  <meta name="twitter:image" content="https://smartstemtutor.site/IMG_20231222_141252.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://smartstemtutor.site/booksession.html#tutoring-service",
+    "name": "Online Mathematics and Physics Tutoring",
+    "description": "Live, one-on-one online mathematics and physics tutoring for high-school, AP, IB and undergraduate students.",
+    "serviceType": "One-on-one online tutoring",
+    "url": "https://smartstemtutor.site/booksession.html",
+    "provider": {
+      "@type": "Person",
+      "@id": "https://smartstemtutor.site/#aldo",
+      "name": "Aldo Mayme",
+      "url": "https://smartstemtutor.site/"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "North America"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Online tutoring prices",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "High School, AP and IB Math or Physics Tutoring",
+          "price": "39.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://smartstemtutor.site/booksession.html#high-school-tutoring",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "High School, AP and IB Math or Physics Tutoring",
+            "description": "A 60-minute live, one-on-one online lesson."
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Undergraduate Math or Physics Tutoring",
+          "price": "49.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://smartstemtutor.site/booksession.html#undergraduate-tutoring",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Undergraduate Math or Physics Tutoring",
+            "description": "A 60-minute live, one-on-one online lesson."
+          }
+        }
+      ]
+    }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -696,6 +767,76 @@
       margin: 0 auto;
     }
 
+
+    /* ─── Frequently asked questions ─────────────────────────── */
+    .faq-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .faq-heading {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .faq-heading h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 4vw, 42px);
+      color: white;
+      margin: 8px 0 0;
+      letter-spacing: -0.02em;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-list details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0 20px;
+      transition: border-color var(--transition), background var(--transition);
+    }
+
+    .faq-list details[open] {
+      background: rgba(0,200,255,0.06);
+      border-color: var(--border-accent);
+    }
+
+    .faq-list summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 32px 18px 0;
+      position: relative;
+      font-weight: 600;
+      color: white;
+    }
+
+    .faq-list summary::-webkit-details-marker { display: none; }
+
+    .faq-list summary::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--accent);
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    .faq-list details[open] summary::after { content: '−'; }
+
+    .faq-list p {
+      color: #c8cce0;
+      margin: -2px 0 18px;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
     /* ─── Footer ─────────────────────────────────────────────── */
     .foot {
       background: linear-gradient(135deg, #12121e 0%, #141c30 100%);
@@ -772,6 +913,8 @@
 
       .method-inner { padding: 28px 24px; }
 
+      .faq-section { padding: 0 20px; }
+
       hr.glow-hr { margin: 28px auto; }
     }
 
@@ -785,7 +928,7 @@
   <!-- HEADER -->
   <header id="header" role="banner">
     <div class="bgr">
-      <a href="index.html" aria-label="Smart STEM Tutor — Home">
+      <a href="/" aria-label="Smart STEM Tutor — Home">
         <span class="logo-mark" aria-hidden="true">⚛</span>
         <span class="logo-text">Smart STEM Tutor</span>
       </a>
@@ -799,7 +942,7 @@
     </div>
 
     <nav id="navbar" aria-label="Main navigation">
-      <a href="index.html">Home</a>
+      <a href="/">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a class="active" href="booksession.html" aria-current="page"><b>Pricing</b></a>
@@ -809,7 +952,7 @@
   </header>
 
   <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <a href="about.html">About</a>
     <a href="contact.html">Send me a message</a>
     <a href="booksession.html">Book a lesson</a>
@@ -819,56 +962,68 @@
   <main>
 
     <!-- HERO -->
-    <section class="page-hero" aria-label="Pricing introduction">
-      <span class="section-eyebrow">Pricing</span>
-      <h1>Book a <span>Lesson</span></h1>
-      <p>Choose your lesson level and view the price immediately. Every lesson is live, one-on-one, and tailored to your needs.</p>
+    <section class="page-hero" aria-label="Online tutoring prices">
+      <span class="section-eyebrow">Transparent pricing</span>
+      <h1>Online Tutoring <span>Prices</span></h1>
+      <p>Choose the academic level that fits your course. Every 60-minute lesson is live, one-on-one, and tailored to your current topic and learning goals.</p>
     </section>
 
     <!-- PRICING CARDS -->
     <section aria-label="Pricing options">
       <div class="pricing-grid">
 
-        <!-- High School -->
-        <article class="pricing-card reveal" aria-label="High School Math Lesson pricing">
+        <!-- High School, AP and IB -->
+        <article class="pricing-card reveal" id="high-school-tutoring"
+                 aria-label="High school, AP and IB mathematics or physics tutoring pricing">
           <div class="level-icon" aria-hidden="true">📐</div>
-          <h2>High School Math</h2>
-          <div class="duration">1 hour · Online · One-on-one</div>
+          <h2>High School, AP &amp; IB</h2>
+          <div class="duration">60 minutes · Online · One-on-one</div>
           <div class="price" aria-label="39 dollars 99 cents">
             <sup>$</sup>39<span class="cents">.99</span>
           </div>
-          <div class="price-note">per session · USD</div>
-          <div class="lesson-policy-note">This is a paid tutoring lesson, not a free trial or demo.</div>
+          <div class="price-note">per lesson · USD</div>
+          <div class="lesson-policy-note">Paid instruction begins with the first tutoring lesson.</div>
           <ul class="feature-list">
-            <li>Algebra, Pre-calculus, Calculus</li>
-            <li>AP &amp; IB curriculum support</li>
-            <li>Live video call session</li>
-            <li>Conversational, adaptive teaching</li>
+            <li>Algebra, Pre-calculus and Calculus</li>
+            <li>AP Physics 1 and AP Physics 2</li>
+            <li>AP Physics C: Mechanics and E&amp;M</li>
+            <li>IB mathematics and physics support</li>
+            <li>Adaptive explanations and guided practice</li>
           </ul>
+          <a href="contact.html" class="book-btn"
+             aria-label="Request a high school, AP or IB tutoring lesson">
+            Request this lesson
+          </a>
         </article>
 
         <!-- Undergraduate -->
-        <article class="pricing-card popular reveal" aria-label="Undergraduate Math Lesson pricing">
-          <span class="popular-badge" aria-label="Most popular plan">Most Popular</span>
+        <article class="pricing-card popular reveal" id="undergraduate-tutoring"
+                 aria-label="Undergraduate mathematics or physics tutoring pricing">
+          <span class="popular-badge" aria-label="College-level tutoring">College Level</span>
           <div class="level-icon" aria-hidden="true">🎓</div>
-          <h2>Undergraduate Math</h2>
-          <div class="duration">1 hour · Online · One-on-one</div>
+          <h2>Undergraduate Math &amp; Physics</h2>
+          <div class="duration">60 minutes · Online · One-on-one</div>
           <div class="price" aria-label="49 dollars 99 cents">
             <sup>$</sup>49<span class="cents">.99</span>
           </div>
-          <div class="price-note">per session · USD</div>
-          <div class="lesson-policy-note">This is a paid tutoring lesson, not a free trial or demo.</div>
+          <div class="price-note">per lesson · USD</div>
+          <div class="lesson-policy-note">Paid instruction begins with the first tutoring lesson.</div>
           <ul class="feature-list">
-            <li>Linear Algebra, Calculus 3, ODEs</li>
-            <li>Classical &amp; Quantum Mechanics</li>
-            <li>Set Theory &amp; advanced topics</li>
-            <li>Conversational, adaptive teaching</li>
+            <li>Calculus 1–3 and Linear Algebra</li>
+            <li>Differential Equations and Set Theory</li>
+            <li>Classical and Quantum Mechanics</li>
+            <li>Computational Physics</li>
+            <li>Adaptive explanations and guided practice</li>
           </ul>
+          <a href="contact.html" class="book-btn"
+             aria-label="Request an undergraduate mathematics or physics tutoring lesson">
+            Request this lesson
+          </a>
         </article>
 
       </div>
 
-      <p class="disclaimer"><strong>All instruction is paid from the first lesson.</strong> Prices are in US dollars · Exchange rate fees may apply</p>
+      <p class="disclaimer"><strong>All instruction is paid from the first lesson.</strong> Prices are shown in US dollars; payment-provider or currency-conversion fees may apply.</p>
 
       <!-- Payment methods -->
       <div class="payment-wrap reveal">
@@ -891,24 +1046,24 @@
       <div class="policy-card">
         <div class="policy-icon" aria-hidden="true">ℹ️</div>
         <div class="policy-content">
-          <span class="section-eyebrow">Please read before booking</span>
-          <h2 id="consultation-policy-heading">Complimentary consultation: no free tutoring</h2>
+          <span class="section-eyebrow">Before your first lesson</span>
+          <h2 id="consultation-policy-heading">Complimentary 15-minute planning call</h2>
           <p>
-            I offer a complimentary 15-minute consultation to discuss your goals, learning needs,
-            scheduling, and what our tutoring arrangement would look like.
+            Use this call to discuss the course, current topic, learning goals, availability,
+            and whether my tutoring approach is a good fit.
           </p>
           <p>
-            <strong>The consultation does not include tutoring or academic instruction.</strong>
-            Once I provide instruction, the session is your <strong>first paid tutoring lesson</strong>, not a demo, trial, or sample lesson.
+            <strong>The planning call does not include instruction.</strong>
+            Tutoring, problem solving, homework help, and test preparation begin during your first paid lesson.
           </p>
-          <ul class="policy-list" aria-label="Services not included in the complimentary consultation">
-            <li>No homework help or problem solving</li>
-            <li>No test preparation or concept teaching</li>
-            <li>No free trial, demo, or sample tutoring</li>
+          <ul class="policy-list" aria-label="Items not included in the complimentary planning call">
+            <li>No worked homework or test questions</li>
+            <li>No concept teaching or sample lesson</li>
+            <li>No academic instruction during the call</li>
           </ul>
           <a href="https://calendly.com/aldon2004/new-meeting" class="consult-btn" rel="noopener noreferrer"
-             aria-label="Book a complimentary 15-minute consultation with no tutoring included">
-            Book the complimentary consultation
+             aria-label="Book a complimentary 15-minute planning call">
+            Book the 15-minute planning call
           </a>
         </div>
       </div>
@@ -920,8 +1075,36 @@
     <section class="method-section reveal" aria-labelledby="method-heading">
       <div class="method-inner">
         <span class="section-eyebrow">How it works</span>
-        <h2 id="method-heading">My Lessons</h2>
-        <p>I use a simple and straightforward methodology: a conversational one. You tell me what you're struggling with, I explain it as many ways as it takes until it clicks. I keep asking questions and adapting until the concept is truly understood — not just memorised.</p>
+        <h2 id="method-heading">What a lesson looks like</h2>
+        <p>We begin with the exact concept or problem causing difficulty. I break it into manageable steps, ask questions to identify where the confusion starts, and adapt the explanation until the reasoning is clear. You then practise applying the idea with guidance so that you can solve similar problems independently.</p>
+      </div>
+    </section>
+
+    <hr class="glow-hr">
+
+    <!-- FAQ -->
+    <section class="faq-section reveal" aria-labelledby="faq-heading">
+      <div class="faq-heading">
+        <span class="section-eyebrow">Common questions</span>
+        <h2 id="faq-heading">Before you book</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Are mathematics and physics the same price?</summary>
+          <p>Yes. The price depends on the academic level, not the subject: high-school, AP and IB lessons are $39.99, while undergraduate lessons are $49.99.</p>
+        </details>
+        <details>
+          <summary>Is the planning call a tutoring lesson?</summary>
+          <p>No. The complimentary 15-minute call is only for discussing your course, goals, schedule and tutoring arrangements. Instruction begins with the first paid lesson.</p>
+        </details>
+        <details>
+          <summary>How do I request a paid lesson?</summary>
+          <p>Select “Request this lesson” under the appropriate level and send the course name, topic, preferred times and any deadline you are working toward.</p>
+        </details>
+        <details>
+          <summary>What should I send before the lesson?</summary>
+          <p>Send the course or syllabus, the topic you want to cover, and any notes, examples or assigned problems that will help focus the lesson.</p>
+        </details>
       </div>
     </section>
 
@@ -934,6 +1117,7 @@
       <li><a href="https://www.linkedin.com/in/aldo-mayme-martinez" class="footer-link" rel="noopener noreferrer">in LinkedIn</a></li>
       <li><a href="https://www.reddit.com/user/Glittering_Report_82/" class="footer-link" rel="noopener noreferrer">Reddit</a></li>
       <li><a href="index-es.html" class="footer-link" hreflang="es">🌐 Español</a></li>
+      <li><a href="blog.html" class="footer-link">Blog</a></li>
       <li><span class="footer-copy">©2026 Aldo Mayme</span></li>
     </ul>
   </footer>
